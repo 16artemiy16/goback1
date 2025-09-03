@@ -10,4 +10,7 @@ dropdb:
 sqlc:
 	sqlc generate
 
-.PHONY: postgres createdb dropdb sqlc
+test:
+	go test -v ./...
+
+.PHONY: postgres createdb dropdb sqlc test
